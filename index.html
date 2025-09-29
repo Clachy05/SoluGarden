@@ -1,11 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soul Garden | Apoyo Emocional y Salud Mental</title>
+    <meta name="description"
+        content="Soul Garden es un espacio seguro para el apoyo emocional y la salud mental. Encuentra recursos, comunidad, y líneas de ayuda de emergencia.">
+    <meta name="keywords"
+        content="salud mental, apoyo emocional, prevención del suicidio, comunidad, ayuda, Soul Garden">
+    <meta name="author" content="Claudia Nagüel">
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="main-nav">
+            <a href="index.html" class="logo-link" aria-label="Ir a la página de Inicio de Soul Garden">
+                <div class="logo-container">
+                    <img src="imagenes/logo.png" alt="Logo de Soul Garden: un cerebro meditando sobre una nube"
+                        class="logo">
+                    <h1>Soul Garden</h1>
+                </div>
+            </a>
+
+            <ul>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar en Soul Garden">
+                <button id="search-button" aria-label="Iniciar Búsqueda">
+                    <img src="imagenes/buscar.png" alt="Icono de Búsqueda" class="search-icon">
+                </button>
+            </div>
+            <a href="https://discord.gg/gbWNQXPgdS" target="_blank" class="discord-button-nav transition-effect">
+                <i class="fab fa-discord"></i> ÚNETE
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner-hero" class="full-screen-banner">
+            <button class="emergency-button pulse-effect"
+                onclick="document.getElementById('emergencia-modal').style.display='block'">
+                🚨 <strong>¿NECESITAS AYUDA URGENTE? HAZ CLIC AQUÍ</strong> 🚨
+            </button>
+        </section>
+
+        <section id="nosotros" class="content-section about-us-section fade-in">
+            <h2>💖 Sobre Nosotros: Soul Garden</h2>
+
+            <div class="about-intro">
+                <p>
+                    <strong>Soul Garden</strong> es un espacio pensado para cuidar la salud emocional y el bienestar de
+                    quienes lo habitan. Más que un servidor, somos una pequeña comunidad donde podés sentirte
+                    <strong>acompañado, comprendido y aceptado tal como sos</strong>. Nuestro corazón late con una idea
+                    simple: nadie debería atravesar sus momentos difíciles en soledad.
+                </p>
+            </div>
+
+            <div class="about-subsection">
+                <h3 class="subsection-title">🌱 Nuestro Enfoque y Seguridad</h3>
+                <p>Lo más importante para nosotros es que te sientas seguro. Todo lo que hacemos se basa en la escucha,
+                    el respeto y la empatía entre personas que eligen acompañarse.</p>
+
+                <ul class="safety-list">
+                    <li>
+                        <i class="fas fa-user-shield"></i>
+                        <strong>No somos profesionales:</strong> No damos terapia ni atención médica. Somos personas
+                        voluntarias que ofrecemos compañía y apoyo desde la experiencia de la vida.
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <strong>Confidencialidad:</strong> Lo que se comparte en los espacios de desahogo se queda en la
+                        comunidad. Cuidar la confianza es la regla de oro.
+                    </li>
+                    <li>
+                        <i class="fas fa-users-viewfinder"></i>
+                        <strong>Inclusión:</strong> Soul Garden es un lugar abierto a todos. Creemos en el respeto a la
+                        diversidad —ya sea de género, orientación, cultura, creencias o neurodiversidad— porque cada voz
+                        suma.
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <p class="final-motto">
+                En Soul Garden no prometemos soluciones mágicas, pero sí un <strong>acompañamiento genuino</strong>.
+                Caminamos juntos, cada quien a su ritmo, porque creemos que en comunidad es más fácil sostener la
+                esperanza.
+            </p>
+        </section>
+
+        <section id="inicio" class="presentation-section fade-in">
+            <div class="hero-text">
+                <p class="slogan">🌿 <strong>¡Bienvenido a Soul Garden!</strong> 🌿</p>
+                <h2>✨ <strong>Apoyo emocional</strong> ✨</h2>
+                <p>Este servidor fue creado para quienes están pasando por malos momentos y necesitan un espacio
+                    seguro para sentirse mejor. 💚🧠</p>
+                <p>🔹 ¡Aquí <strong>no estás solo</strong>! Ven, apóyate y crece con nosotros 🔹</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card fade-in delay-2">
+                        <h3>Canal de Desahogo 📝💬</h3>
+                        <p>Un espacio seguro para expresar <strong>lo que sientes</strong> sin juicios. La honestidad es
+                            bienvenida.</p>
+                    </div>
+                    <div class="feature-card fade-in delay-3">
+                        <h3>Comunidad Activa 🤝🌈</h3>
+                        <p>Una red de apoyo, siempre dispuesta a escuchar y a tender una mano. ¡Conecta con otros!</p>
+                    </div>
+                    <div class="feature-card fade-in delay-4">
+                        <h3>Eventos Semanales 🎊🗓️</h3>
+                        <p>Actividades para <strong>conectar</strong>, divertirnos juntos y romper la rutina. ¡Siempre
+                            hay
+                            algo nuevo!
+                        </p>
+                    </div>
+                    <div class="feature-card fade-in delay-5">
+                        <h3>Asistencia Emocional 💖🌟</h3>
+                        <p>Recursos y apoyo para guiarte en tu camino hacia el <strong>bienestar</strong> mental y
+                            emocional.</p>
+                    </div>
+                    <div class="feature-card fade-in delay-6">
+                        <h3>Galería de Arte 🎨✨</h3>
+                        <p>Expresa tu <strong>creatividad</strong> a través de la pintura, escritura, música y otras
+                            formas
+                            de arte terapéutico.</p>
+                            <a href="galeria-arte.html" class="button-small transition-effect">Ver Obras</a>
+                    </div>
+
+
+                    <div class="feature-card fade-in delay-7">
+                        <h3>🌟 Rincón de Luz 🌟</h3>
+                        <p>Un espacio para compartir logros, gratitud y pequeñas alegrías. Aquí celebramos lo que nos
+                            hace bien.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="emergencia-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button"
+                    onclick="document.getElementById('emergencia-modal').style.display='none'">&times;</span>
+                <h2>📞 Números de Ayuda: Recursos de Prevención del Suicidio</h2>
+                <p>Si tú o alguien que conoces está en peligro inmediato, por favor, llama a la línea de emergencia
+                    local o dirígete al hospital más cercano.</p>
+
+                <div class="ayuda-zona">
+                    <h3>América del Norte</h3>
+                    <ul>
+                        <li><strong>Canadá:</strong> 1-833-456-4566 (Lifeline Canada) / Texto 45645</li>
+                        <li><strong>Estados Unidos:</strong> 988 (National Suicide Prevention Lifeline)</li>
+                        <li><strong>México:</strong> 800-273-8255 (Línea Nacional de Prevención del Suicidio)</li>
+                        <li><strong>Puerto Rico:</strong> 1-800-981-0023 (Línea PAS)</li>
+                    </ul>
+                </div>
+
+                <div class="ayuda-zona">
+                    <h3>América Central</h3>
+                    <ul>
+                        <li><strong>Costa Rica:</strong> 800-911-2000 (Línea de Emergencias)</li>
+                        <li><strong>El Salvador:</strong> 800-911 (Línea de Prevención del Suicidio)</li>
+                        <li><strong>Guatemala:</strong> 1555 (Línea de Apoyo Psicológico)</li>
+                        <li><strong>Honduras:</strong> 800-911-2000 (Línea de Emergencias)</li>
+                        <li><strong>Nicaragua:</strong> 105 (Emergencias)</li>
+                        <li><strong>Panamá:</strong> 104 (Emergencias) / 523-2334 (Clínica de Salud Mental)</li>
+                    </ul>
+                </div>
+
+                <div class="ayuda-zona">
+                    <h3>América del Sur</h3>
+                    <ul>
+                        <li><strong>Argentina:</strong> 135 o 0800-345-1435 (Centro de Asistencia al Suicida)</li>
+                        <li><strong>Brasil:</strong> 188 (Centro de Valorização da Vida - CVV)</li>
+                        <li><strong>Chile:</strong> 800-800-373 (Línea de Prevención del Suicidio)</li>
+                        <li><strong>Colombia:</strong> 123 (Línea de Emergencias) / 01800-911-200 (Línea de Apoyo
+                            Psicológico)</li>
+                        <li><strong>Ecuador:</strong> 171 (Servicio Integrado de Seguridad)</li>
+                        <li><strong>Perú:</strong> 0800-108-28 (Línea 108 de Salud Mental)</li>
+                        <li><strong>Uruguay:</strong> 0800-345-1435 (Línea de Emergencias)</li>
+                        <li><strong>Venezuela:</strong> 911 (Emergencias)</li>
+                    </ul>
+                </div>
+
+                <div class="ayuda-zona">
+                    <h3>Europa</h3>
+                    <ul>
+                        <li><strong>Alemania:</strong> 0800 111 0 111 / 0800 111 0 222 (Telefonseelsorge)</li>
+                        <li><strong>Bélgica:</strong> 1813 (Centre de Prévention du Suicide)</li>
+                        <li><strong>España:</strong> 024 (Línea de Prevención del Suicidio)</li>
+                        <li><strong>Francia:</strong> 01 45 39 40 00 (SOS Suicide)</li>
+                        <li><strong>Italia:</strong> 800 860 022 (Telefono Amico)</li>
+                        <li><strong>Reino Unido:</strong> 0800 689 5652 (Samaritans)</li>
+                        <li><strong>Suecia:</strong> 020 22 00 60 (Suicidpreventian)</li>
+                        <li><strong>Portugal:</strong> 808 24 24 74 (SOS Voz Amiga)</li>
+                    </ul>
+                </div>
+                <p class="web-info">Para más información global: <a href="https://www.befrienders.org/"
+                        target="_blank">Befrienders Worldwide</a> o <a href="https://www.iasp.info/crisis-centres/"
+                        target="_blank">IASP Crisis Centres</a>.</p>
+            </div>
+        </div>
+
+        <section id="recursos" class="content-section">
+            <h2 class="fade-in">📚 Biblioteca de Bienestar y Recursos Multimedia</h2>
+            <div class="resource-grid">
+                <div class="resource-item podcast fade-in delay-7">
+                    <img src="imagenes/iconpodcast.png" alt="Icono de Podcast">
+                    <h3>🎧 Podcasts Recomendados</h3>
+                    <p>Escucha charlas inspiradoras sobre <strong>mindfulness</strong>, gestión de emociones y
+                        desarrollo personal.
+                    </p>
+                    <a href="podcasts.html" class="button-small">Explorar</a>
+                </div>
+                <div class="resource-item videos fade-in delay-8">
+                    <img src="imagenes/iconvideo.png" alt="Icono de Video">
+                    <h3>▶️ Videos Educativos</h3>
+                    <p>Selección de videos sobre técnicas de relajación, terapia cognitivo-conductual y salud mental en
+                        general.</p>
+                    <a href="videos.html" class="button-small">Ver Ahora</a>
+                </div>
+                <div class="resource-item publicaciones fade-in delay-9">
+                    <img src="imagenes/iconblog.png" alt="Icono de Blog">
+                    <h3>📄 Publicaciones y Artículos</h3>
+                    <p>Lecturas sobre cómo navegar la ansiedad, depresión y otros desafíos emocionales con estrategias
+                        prácticas.</p>
+                    <a href="publicaciones.html" class="button-small">Leer Más</a>
+                </div>
+                <div class="resource-item grounding fade-in delay-10">
+                    <img src="imagenes/icongrounding.png" alt="Icono de Herramienta de Grounding">
+                    <h3>🧘 Herramientas de Grounding</h3>
+                    <p>Ejercicios rápidos de respiración y conexión a tierra para manejar la <strong>ansiedad y el
+                            pánico</strong> de forma inmediata.</p>
+                    <a href="grounding.html" class="button-small">Probar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunidad" class="discord-section">
+            <h2 class="fade-in">Únete a Nuestra Comunidad en Discord</h2>
+            <div class="discord-card fade-in delay-11">
+                <img src="imagenes/logo.png" alt="Logo de Soul Garden" class="discord-logo">
+                <p>Haz clic para unirte a nuestro servidor y comenzar tu camino de apoyo y crecimiento.</p>
+                <a href="https://discord.gg/gbWNQXPgdS" target="_blank" class="discord-button transition-effect">
+                    <i class="fab fa-discord"></i> <strong>ÚNETE A SOUL GARDEN</strong>
+                </a>
+            </div>
+        </section>
+
+        <section id="intereses" class="content-section contact-cta fade-in delay-12">
+            <h2>Dinos: ¿Qué te gustaría ver en la página de Soul Garden?</h2>
+            <p>Selecciona tu área de interés principal y, si tienes ideas nuevas, ¡escríbelas!</p>
+
+            <form action="https://formspree.io/f/meorovdj" method="POST" class="interest-form">
+
+                <div class="form-group">
+                    <label for="interest-select">Mi principal interés en Soul Garden es:</label>
+                    <select id="interest-select" name="interes-principal" required>
+                        <option value="" disabled selected>-- Elige una opción --</option>
+                        <option value="desahogo">Juegos Recomendados 🎮✨</option>
+                        <option value="comunidad">Rincón Psicológico 🧠💬</option>
+                        <option value="eventos">Eventos Semanales 🎊🗓️</option>
+                        <option value="asistencia">Asistencia Emocional 💖🌟</option>
+                        <option value="arte">Canales de Arte 🎨✨</option>
+                        <option value="recursos-multimedia">Mindfulness 🧘‍♀️🌼</option>
+                        <option value="grounding">Herramientas de Grounding 🧘</option>
+                        <option value="otro">Otro / Sugerencia Libre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="free-text">Si tienes una sugerencia nueva para una sección o idea, escríbela aquí
+                        (opcional):</label>
+                    <textarea id="free-text" name="sugerencia-libre" rows="4"
+                        placeholder="Ej: Me gustaría un club de lectura o un canal para compartir recetas saludables."></textarea>
+                </div>
+
+                <button type="submit" class="contact-button">Enviar Intereses y Sugerencias</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/soulgarden.ong/" target="_blank" aria-label="Instagram">
+                <img src="imagenes/iconinstagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@soulgarden348" target="_blank" aria-label="TikTok">
+                <img src="imagenes/icontiktok.png" alt="TikTok">
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+                <img src="imagenes/icontwitter.png" alt="Twitter">
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <img src="imagenes/iconyoutube.png" alt="YouTube">
+            </a>
+        </div>
+        <p>&copy; 2025 Soul Garden. Desarrollado por <strong>Claudia Nagüel</strong>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
